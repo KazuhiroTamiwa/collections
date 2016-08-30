@@ -7,7 +7,9 @@ host_name=localhost
 
 
 # yumで必要なものインストール
-yum -y install httpd mysql-server php php-mysql wget
+# yum remove httpd php mysql-server
+yum -y install httpd24 mysql-server php55 wget
+yum install -y php55-mysqlnd php55-pdo php55-pecl-memcached php55-mbstring php55-pecl-apc php55-gd
 
 
 # ポート開放
